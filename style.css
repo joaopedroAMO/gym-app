@@ -63,6 +63,7 @@ th, td {
     text-align: center;
 }
 
+
 .content{
     text-align: center;
     font-size: small;
@@ -94,5 +95,18 @@ td {
     color: white;
 }
 
+@media (max-width: 768px) {
+    table{
+        display: flex;
+    }
 
-
+    .brackRow{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .brackRow > td {
+        flex:1 1 1 12.5%; /* Divide as células em 50% da largura, criando a quebra */
+        box-sizing: border-box;
+    }
+}
