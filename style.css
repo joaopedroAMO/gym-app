@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+    max-width: 100vw;
+    padding: 20px 40px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+#umRm, #umRmAgachamento, #umRmTerra, #umRmDsenvolvimento, #umRmRemada, #umRmRosca{
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+button{
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    font-weight: bold;
+    width: 180px;
+    color: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+tr{
+    max-width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    font-size: small;
+}
+
+.content > hr{
+    margin: 5px 0px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    width: calc(100%/8);
+}
+
+td {
+    background-color: white;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    transition: .2s ease-in;
+    cursor: pointer;
+    width: calc(100%/8);
+}
+
+.active {
+    background-color: green;
+    color: white;
+}
+
+
+
